@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SAFE GAME LABS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:
+radial-gradient(circle at top,#0c3d64,#07121f 55%,#03070c);
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+/* Fondo */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:700px;
+height:700px;
+
+background:#00e5ff22;
+
+filter:blur(150px);
+
+top:-250px;
+left:-200px;
+
+z-index:-1;
+
+}
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:600px;
+height:600px;
+
+background:#2962ff22;
+
+filter:blur(180px);
+
+bottom:-250px;
+right:-150px;
+
+z-index:-1;
+
+}
+
+header{
+
+padding:70px 20px;
+
+text-align:center;
+
+}
+
+.logo{
+
+font-size:62px;
+
+margin-bottom:15px;
+
+}
+
+h1{
+
+font-size:56px;
+
+font-weight:800;
+
+letter-spacing:2px;
+
+background:linear-gradient(90deg,#00E5FF,#4FC3F7,#82B1FF);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+header p{
+
+margin-top:18px;
+
+font-size:20px;
+
+color:#d9d9d9;
+
+}
+
+.badge{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:14px 28px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.2);
+
+backdrop-filter:blur(20px);
+
+border-radius:40px;
+
+font-weight:bold;
+
+}
+
+.grid{
+
+max-width:1300px;
+
+margin:auto;
+
+padding:40px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:25px;
+
+padding:30px;
+
+transition:.4s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+width:200%;
+
+height:4px;
+
+background:linear-gradient(90deg,#00e5ff,#2962ff,#00e5ff);
+
+top:0;
+left:-100%;
+
+transition:.5s;
+
+}
+
+.card:hover::before{
+
+left:0;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,229,255,.18);
+
+}
+
+.game{
+
+font-size:60px;
+
+margin-bottom:15px;
+
+}
+
+.card h2{
+
+font-size:28px;
+
+margin-bottom:10px;
+
+}
+
+.card p{
+
+line-height:1.7;
+
+color:#dcdcdc;
+
+margin-bottom:20px;
+
+}
+
+.estado{
+
+display:inline-block;
+
+padding:8px 18px;
+
+border-radius:30px;
+
+background:#00c853;
+
+font-size:14px;
+
+font-weight:bold;
+
+margin-bottom:25px;
+
+}
+
+a{
+
+display:block;
+
+text-align:center;
+
+padding:15px;
+
+background:linear-gradient(90deg,#00E5FF,#2979FF);
+
+border-radius:15px;
+
+text-decoration:none;
+
+color:white;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+a:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 0 25px #00e5ff;
+
+}
+
+footer{
+
+margin-top:80px;
+
+padding:40px;
+
+text-align:center;
+
+color:#bbb;
+
+border-top:1px solid rgba(255,255,255,.1);
+
+}
+
+footer b{
+
+font-size:20px;
+
+color:white;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🧪</div>
+
+<h1>SAFE GAME LABS</h1>
+
+<p>Portal privado de desarrollo de videojuegos para capacitación en SST.</p>
+
+<div class="badge">
+🔒 Acceso exclusivo • Roadmap Premium
+</div>
+
+</header>
+
+<div class="grid">
+
+<div class="card">
+
+<div class="game">🪜</div>
+
+<h2>Sube Seguro</h2>
+
+<p>Entrenamiento interactivo para trabajo seguro en alturas con mecánicas gamificadas.</p>
+
+<div class="estado">🟢 Disponible</div>
+
+<a href="https://sube-seguro.netlify.app" target="_blank">
+🚀 Jugar Ahora
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="game">🎲</div>
+
+<h2>Loto SST</h2>
+
+<p>La versión moderna del clásico loto enfocada en Seguridad y Salud en el Trabajo.</p>
+
+<div class="estado">🟢 Beta</div>
+
+<a href="https://lotto-safegame.netlify.app" target="_blank">
+🚀 Jugar Ahora
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="game">🃏</div>
+
+<h2>Cartas de Riesgo</h2>
+
+<p>Juego estratégico para reconocer peligros, riesgos y controles de manera divertida.</p>
+
+<div class="estado">🟢 Beta</div>
+
+<a href="https://tinyurl.com/Cartas-de-riesgos" target="_blank">
+🚀 Jugar Ahora
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="game">🔥</div>
+
+<h2>Fire Code Red</h2>
+
+<p>Simulador de respuesta a emergencias e incendios mediante retos interactivos.</p>
+
+<div class="estado">🟢 Beta</div>
+
+<a href="https://firecodered.netlify.app/" target="_blank">
+🚀 Jugar Ahora
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<b>SAFE GAME LABS</b>
+
+<br><br>
+
+Portal privado para evaluación y pruebas de videojuegos educativos.
+
+<br><br>
+
+© 2026 SAFE GAME. Todos los derechos reservados.
+
+</footer>
+
+</body>
+</html>
